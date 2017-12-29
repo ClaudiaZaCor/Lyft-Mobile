@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	height: 100vh;
+}
+
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;  
+}
+
+.container-flex-buttons {
+	flex-direction:row;
+  text-align: center;
+	padding: 2em;
+	transform: translateY(150%);
+}
+
+.grad1 {
+  background: linear-gradient( rgb(101, 1, 100) 25%, rgb(197, 8, 129));
+	}
+
+.grad2 {
+	background: linear-gradient( rgb(101, 1, 100) 45%, rgb(197, 8, 129));
+	}
+
+/*Vista principal*/
+
+.main-logo {
+	width: 100%;
+	display: block;
+	margin: 10%;	
+}
+
+
+/*Vista Register*/
+
+.bg-image {
+	background-image: url('../assets/images/lyft-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.small {
+	width: 40%;
+	display: block;
+	margin: 5% 30% 10% 30%;
+}
+
+.buttons-register {
+	padding: 2em;
+}
+
+.btn-success {
+	padding: 0.6em;
+	margin-bottom: 3em;
+	background: rgb(255,168,52);
+	
+}
+
+#login , #signup {
+	background: transparent;
+	border: 2px solid white;
+	display: inline;
+	padding: 1em;
+	margin: 1em;
+}
+
+#signup:hover {
+  background: linear-gradient(rgb(197, 8, 129) 25%, rgb(255,168,52));
+}
+
+.logo-pink {
+	width: 100vw;;
+	display: block;
+	margin: 5% 0 0 0;
+}
+
+
+/*Vista Sign Up*/
+
+.title {
+	padding: 0.5em;
+	margin-bottom: 1em;
+	color: white; 
+}
+
+h4, h5 {
+	color: white; 
+}
+
+hr {
+	margin-left: 5%;
+}
+
+.my-select, .telep {
+	height: 30px;
+	border-radius: 5px;
+	display: inline;
+}
