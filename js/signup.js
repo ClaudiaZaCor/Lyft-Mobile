@@ -1,6 +1,29 @@
-/*
+$(document).ready(function() {
+  // Seleccionando elementos del DOM
+  var $telephone = $('#telep');
 
-expresion regular para validar numero telefonico
+  // Asociando eventos a los elementos seleccioandos
+  $('#telep').keyup(function() {
+    if ($('#telep').val().length === 10) {
+      $('#signup').attr('disabled', false)
+        .attr('href', '../views/verify.html');
+    } else {
+      $('#signup').attr('disabled', 'disabled');
+    }   
+  });
 
-^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$ */
+  // Función que genera un código aleatorio
+
+  $('#signup').click(function() {
+    var number = Math.floor(Math.random() * 900) + 100;
+    alert('LAB - ' + number);
+    localStorage.labCode = number;
+    window.location.href = verify();
+  });
+
+  function newFunction() {
+    return '../views/verify.html';
+}
+});
+
 

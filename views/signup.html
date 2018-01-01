@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="../vendors/directory/css/chosen.css">
-  <link rel="stylesheet" href="../vendors/directory/css/ImageSelect.css">
 	<link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/main.css">
 	
@@ -20,7 +18,6 @@
 		  </a>
     </div>
   </header>
-  <main>
 	  <form class="container-flex-column text-center">
       <section class="row col-xs-12">
         <h1 class="title">Sign up</h1>
@@ -29,14 +26,14 @@
         <br>
         <!--Select desplegable de paises-->
 		    <select class="my-select col-xs-4-offset-xs-1">
-          <option data-img-src="../vendors/directory/images/logo_mexico.png">México</option>
-          <option data-img-src="../vendors/directory/images/logo_colombia.png">Colombia</option>
-          <option selected= "selected" data-img-src="../vendors/directory/images/peru_icon.png">Perú</option>
-          <option data-img-src="../vendors/directory/images/usa_icon.png">EEUU</option>
+          <option data-img-src="../assets/images/logo_mexico.png">México</option>
+          <option data-img-src="../assets/images/logo_colombia.png">Colombia</option>
+          <option selected= "selected" data-img-src="../assets/images/peru_icon.png">Perú</option>
+          <option data-img-src="../assets/images/usa_icon.png">EEUU</option>
 		    </select>
         <!--Input de numero telefonico-->
         <div col-xs-6>
-          <input class="telep" type="tel" name="telefono" pattern="[0-9]{10}" maxlength="10" placeholder="52" required>
+          <input id="telep" type="tel" class="validate" maxlength="10">
         </div>
         <br>
         <h5>We'll send a text to verify your phone</h5>
@@ -45,13 +42,8 @@
         <button type="submit" id="signup" class="btn btn-success" disabled> NEXT </button>
       </section>
     </form>
-  
-	<script src="../vendors/directory/js/chosen.jquery.js" type="text/javascript"></script>
-	<script src="../vendors/directory/js/ImageSelect.jquery.js" type="text/javascript"></script>
+
   <script src="../vendors/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script src="../js/signup.js" type="text/javascript"></script>
-	<script>
-		$(".my-select").chosen();
-	</script>  
 </body>
 </html>
